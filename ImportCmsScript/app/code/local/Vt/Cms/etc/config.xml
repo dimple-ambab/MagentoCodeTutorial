@@ -1,0 +1,17 @@
+<config>
+    <modules>
+        <Vt_Cms>
+            <version>0.1.0</version>
+        </Vt_Cms>
+    </modules>
+    <global>
+        <resources>
+            <vt_cms_setup>
+                <setup>
+                    <module>Vt_Cms</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </vt_cms_setup>
+        </resources>
+    </global>
+</config>

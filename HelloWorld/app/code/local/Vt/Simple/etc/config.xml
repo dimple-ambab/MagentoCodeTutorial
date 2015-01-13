@@ -1,0 +1,10 @@
+<config>
+    <modules>
+        <Vt_Simple>
+            <version>0.1.0</version>
+        </Vt_Simple>
+    </modules>
+    <global>
+
+    </global>
+</config>

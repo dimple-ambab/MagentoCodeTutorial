@@ -5,6 +5,11 @@
         </Vt_Cms>
     </modules>
     <global>
+        <models>
+            <vt_cms>
+                <class>Vt_Cms_Model</class>
+            </vt_cms>
+        </models>
         <resources>
             <vt_cms_setup>
                 <setup>

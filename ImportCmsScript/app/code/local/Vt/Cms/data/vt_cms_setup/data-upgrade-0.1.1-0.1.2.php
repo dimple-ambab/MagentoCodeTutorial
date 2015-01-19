@@ -6,7 +6,7 @@ $cmsPage= array (
 	'root_template'   => 'one_column',
 	'identifier' => 'cmspage-testing',
 	'is_active' => '1',
-	'stores' => array($storeId),
+	'stores' => $storeId,
 	'content' => file_get_contents(__DIR__ .
 	                               '/data_blocks_pages_0.1.0/cms_page1.html')
 );

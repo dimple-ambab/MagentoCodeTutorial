@@ -4,7 +4,15 @@
             <version>0.1.0</version>
         </Vt_Simple>
     </modules>
-    <global>
-
-    </global>
+    <frontend>
+        <routers>
+            <vt_simple>
+                <use>standard</use>
+                <args>
+                    <module>Vt_Simple</module>
+                    <frontName>vt-simple</frontName>
+                </args>
+            </vt_simple>
+        </routers>
+    </frontend>
 </config>

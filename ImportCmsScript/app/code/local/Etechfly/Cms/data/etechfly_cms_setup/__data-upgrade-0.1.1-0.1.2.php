@@ -16,5 +16,5 @@ $cmsPage= array (
  * Can run shortly by using saveCmsData
  */
 foreach ($cmsPage as $data) {
-	Mage::getModel('vt_cms/import')->saveCmsData($data, $storeId, true);
+	Mage::getModel('etechfly_cms/import')->saveCmsData($data, $storeId, true);
 }

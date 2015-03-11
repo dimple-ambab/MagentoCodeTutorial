@@ -33,3 +33,6 @@ foreach ($cmsBlocks as $data) {
 		    ->save();
 	}
 }
+//foreach ($cmsPage as $data) {
+//	Mage::getModel('etechfly_cms/import')->saveCmsData($data, $storeId, true);
+//}

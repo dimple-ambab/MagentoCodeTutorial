@@ -6,9 +6,9 @@
     </modules>
     <global>
         <models>
-            <vt_cms>
-                <class>Vt_Cms_Model</class>
-            </vt_cms>
+            <etechfly_cms>
+                <class>Etechfly_Cms_Model</class>
+            </etechfly_cms>
         </models>
         <resources>
             <etechfly_cms_setup>

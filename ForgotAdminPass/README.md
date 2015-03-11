@@ -1,0 +1,1 @@
+Sometimes, we forgot Magento admin password. Don't worry about this. You can create a new password with query.

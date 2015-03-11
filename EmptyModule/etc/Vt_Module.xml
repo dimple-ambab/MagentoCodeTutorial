@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Vt_Module>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Vt_Module>
+    </modules>
+</config>

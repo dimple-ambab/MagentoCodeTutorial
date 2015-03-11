@@ -1,17 +1,17 @@
 <config>
     <modules>
-        <Vt_Cms>
+        <Etechfly_Cms>
             <version>0.1.0</version>
-        </Vt_Cms>
+        </Etechfly_Cms>
     </modules>
     <global>
         <resources>
-            <vt_cms_setup>
+            <etechfly_cms_setup>
                 <setup>
-                    <module>Vt_Cms</module>
+                    <module>Etechfly_Cms</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
-            </vt_cms_setup>
+            </etechfly_cms_setup>
         </resources>
     </global>
 </config>

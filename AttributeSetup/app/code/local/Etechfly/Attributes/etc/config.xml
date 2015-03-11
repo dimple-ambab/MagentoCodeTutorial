@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Vt_Attributes>
+        <Etechfly_Attributes>
             <version>0.1.0</version>
-        </Vt_Attributes>
+        </Etechfly_Attributes>
     </modules>
     <global>
         <resources>
-            <vt_attributes_setup>
+            <etechfly_attributes_setup>
                 <setup>
-                    <module>Vt_Attributes</module>
+                    <module>Etechfly_Attributes</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
                 <connection>
                     <use>default_setup</use>
                 </connection>
-            </vt_attributes_setup>
+            </etechfly_attributes_setup>
         </resources>
     </global>
 </config>

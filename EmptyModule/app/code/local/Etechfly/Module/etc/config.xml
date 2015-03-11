@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Vt_Module>
+        <Etechfly_Module>
             <version>0.1.0</version>
-        </Vt_Module>
+        </Etechfly_Module>
     </modules>
 </config>

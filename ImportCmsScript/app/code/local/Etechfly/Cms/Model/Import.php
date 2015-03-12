@@ -1,6 +1,6 @@
 <?php
 
-class Vt_Cms_Model_Import
+class Etechfly_Cms_Model_Import
 {
 	/**
 	 * Import Function

@@ -1,18 +1,18 @@
 <config>
     <modules>
-        <Etechfly_Newsletter>
+        <Boolfly_Newsletter>
             <version>0.1.0</version>
-        </Etechfly_Newsletter>
+        </Boolfly_Newsletter>
     </modules>
     <frontend>
         <routers>
-            <etechfly_subscriber>
+            <boolfly_subscriber>
                 <use>standard</use>
                 <args>
-                    <module>Etechfly_Newsletter</module>
+                    <module>Boolfly_Newsletter</module>
                     <frontName>newsletter</frontName>
                 </args>
-            </etechfly_subscriber>
+            </boolfly_subscriber>
         </routers>
     </frontend>
 </config>

@@ -3,7 +3,7 @@
  * User: Mr Khoa
  */
 require_once 'Mage/Newsletter/controllers/SubscriberController.php';
-class Etechfly_Newsletter_SubscriberController extends Mage_Newsletter_SubscriberController
+class Boolfly_Newsletter_SubscriberController extends Mage_Newsletter_SubscriberController
 {
 
     public function indexAction(){

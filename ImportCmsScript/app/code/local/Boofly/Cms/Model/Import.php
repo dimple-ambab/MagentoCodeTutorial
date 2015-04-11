@@ -1,6 +1,6 @@
 <?php
 
-class Etechfly_Cms_Model_Import
+class Boolfly_Cms_Model_Import
 {
 	/**
 	 * Import Function

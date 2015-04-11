@@ -1,22 +1,22 @@
 <config>
     <modules>
-        <Etechfly_Cms>
+        <Boolfly_Cms>
             <version>0.1.0</version>
-        </Etechfly_Cms>
+        </Boolfly_Cms>
     </modules>
     <global>
         <models>
-            <etechfly_cms>
-                <class>Etechfly_Cms_Model</class>
-            </etechfly_cms>
+            <boolfly_cms>
+                <class>Boolfly_Cms_Model</class>
+            </boolfly_cms>
         </models>
         <resources>
-            <etechfly_cms_setup>
+            <boolfly_cms_setup>
                 <setup>
-                    <module>Etechfly_Cms</module>
+                    <module>Boolfly_Cms</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
-            </etechfly_cms_setup>
+            </boolfly_cms_setup>
         </resources>
     </global>
 </config>

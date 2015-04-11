@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <Etechfly_Newsletter>
+        <Vt_Attributes>
             <active>true</active>
             <codePool>local</codePool>
-        </Etechfly_Newsletter>
+        </Vt_Attributes>
     </modules>
 </config>

@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Etechfly_Attributes>
+        <Boolfly_Attributes>
             <version>0.1.0</version>
-        </Etechfly_Attributes>
+        </Boolfly_Attributes>
     </modules>
     <global>
         <resources>
-            <etechfly_attributes_setup>
+            <boolfly_attributes_setup>
                 <setup>
-                    <module>Etechfly_Attributes</module>
+                    <module>Boolfly_Attributes</module>
                     <class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
                 <connection>
                     <use>default_setup</use>
                 </connection>
-            </etechfly_attributes_setup>
+            </boolfly_attributes_setup>
         </resources>
     </global>
 </config>

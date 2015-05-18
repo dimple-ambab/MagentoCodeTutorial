@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Boolfly_Newsletter>
+            <version>0.1.0</version>
+        </Boolfly_Newsletter>
+    </modules>
+    <frontend>
+        <routers>
+            <boolfly_subscriber>
+                <use>standard</use>
+                <args>
+                    <module>Boolfly_Newsletter</module>
+                    <frontName>newsletter</frontName>
+                </args>
+            </boolfly_subscriber>
+        </routers>
+    </frontend>
+</config>

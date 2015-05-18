@@ -1,0 +1,22 @@
+<config>
+    <modules>
+        <Boolfly_Cms>
+            <version>0.1.0</version>
+        </Boolfly_Cms>
+    </modules>
+    <global>
+        <models>
+            <boolfly_cms>
+                <class>Boolfly_Cms_Model</class>
+            </boolfly_cms>
+        </models>
+        <resources>
+            <boolfly_cms_setup>
+                <setup>
+                    <module>Boolfly_Cms</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+            </boolfly_cms_setup>
+        </resources>
+    </global>
+</config>

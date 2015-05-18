@@ -1,8 +1,0 @@
-<config>
-    <modules>
-        <Etechfly_Newsletter>
-            <active>true</active>
-            <codePool>local</codePool>
-        </Etechfly_Newsletter>
-    </modules>
-</config>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Boolfly_Stripe>
+            <version>1.0.0</version>
+        </Boolfly_Stripe>
+    </modules>
+    <global>
+        <models>
+            <boolfly_stripe>
+                <class>Boolfly_Stripe_Model</class>
+            </boolfly_stripe>
+        </models>
+        <helpers>
+            <boolfly_stripe>
+                <class>Boolfly_Stripe_Helper</class>
+            </boolfly_stripe>
+        </helpers>
+    </global>
+    <default>
+        <payment>
+            <boolfly_stripe>
+                <active>1</active>
+                <model>boolfly_stripe/payment</model>
+                <api_key backend_model="adminhtml/system_config_backend_encrypted"/>
+                <payment_action>authorize_capture</payment_action>
+                <title>Boolfly Stripe</title>
+                <cctypes>AE,VI,MC,DI,JCB,OT</cctypes>
+                <useccv>1</useccv>
+            </boolfly_stripe>
+        </payment>
+    </default>
+</config>

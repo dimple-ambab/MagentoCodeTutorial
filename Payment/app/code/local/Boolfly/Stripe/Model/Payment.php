@@ -29,7 +29,7 @@ class Boolfly_Stripe_Model_Payment extends Mage_Payment_Model_Method_Cc
         $billingAddress = $order->getBillingAddress();
         try {
             $api = Stripe\Charge::create(array(
-                'amount' => $amount,
+                'amount' => $amount * 100,
                 'currency' => strtolower($order->getBaseCurrencyCode()),
                 'card' => array(
                     'number' => $payment->getCcNumber(),

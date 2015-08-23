@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Boolfly_Shipping>
+            <version>0.1.0</version>
+        </Boolfly_Shipping>
+    </modules>
+    <global>
+        <models>
+            <boolfly_shipping>
+                <class>Boolfly_Shipping_Model</class>
+            </boolfly_shipping>
+        </models>
+    </global>
+    <default>
+        <carriers>
+            <boolfly_shipping_express>
+                <active>1</active>
+                <model>boolfly_shipping/carrier_express</model>
+                <name>Express</name>
+                <express_price>150</express_price>
+                <title>Boolfly Shipping</title>
+            </boolfly_shipping_express>
+        </carriers>
+    </default>
+</config>

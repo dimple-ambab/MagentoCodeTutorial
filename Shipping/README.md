@@ -1,5 +1,4 @@
 # MagentoCodeTutorial
 
-Shipping Magento
-Magento code for Tutorials
+Shipping Magento.
 Please visit http://www.boolfly.com/

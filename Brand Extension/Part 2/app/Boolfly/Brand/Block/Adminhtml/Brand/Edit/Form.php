@@ -57,12 +57,15 @@ Mage_Adminhtml_Block_Widget_Form
             'required'  => true,
             'value' => $brandModel->getUrlKey(),
         ));
-        $fieldset->addField('visibility', 'select', array(
-            'name'  => 'visibility',
-            'label' => $this->__('Visibility'),
-            'title' => $this->__('Visibility'),
-            'options' => $brandSingleton->getAvailableVisibilities()
-        ));
+
+        $fieldset->addField('visibility', 'select',
+            array(
+                'name'  => 'visibility',
+                'label' => Mage::helper('boolfly_brand')->__('Visibility'),
+                'title' => Mage::helper('boolfly_brand')->__('Visibility'),
+                'value' => $brandModel->getVisibility(),
+                'options' => $brandModel->getAvailableVisibilities()
+            ));
 
         //Add Image field to our form
         $fieldset->addField('brand_image', 'image', array(

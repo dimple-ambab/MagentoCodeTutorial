@@ -44,4 +44,15 @@
             </boolfly_brand>
         </routers>
     </frontend>
+    <admin>
+        <routers>
+            <boolfly_brand_admin>
+                <use>admin</use>
+                <args>
+                    <module>Boolfly_Brand_Adminhtml</module>
+                    <frontName>boolfly-brand-admin</frontName>
+                </args>
+            </boolfly_brand_admin>
+        </routers>
+    </admin>
 </config>

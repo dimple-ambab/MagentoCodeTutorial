@@ -34,6 +34,29 @@ class Boolfly_Brand_Adminhtml_BrandController extends Mage_Adminhtml_Controller_
         //Check $_POST data if the form was submitted
         if($postData = $this->getRequest()->getPost())
         {
+            if(isset($_FILES['brand_image']['name']) && $_FILES['brand_image']['name'] != '') {
+                try {
+
+                    $uploader = new Varien_File_Uploader('brand_image');
+                    $uploader->setAllowedExtensions('jpg', 'jpeg', 'gif', 'png');
+
+                    $uploader->setAllowRenameFiles(false);
+                    $uploader->setFilesDispersion(false);
+
+                    $path = Mage::getBaseDir('media') . DS . 'brand/';
+
+                    $uploader->save($path, $_FILES['brand_image']['name']);
+
+                    $name = $uploader->getCorrectFileName($_FILES['brand_image']['name']);
+
+                    $postData['brand_image'] = $name;
+
+                } catch(Exception $e) {
+
+                    Mage::logException($e);
+                    $this->_getSession()->addError($e->getMessage());
+                }
+            }
             try{
                 $brand->addData($postData);
                 $brand->save();

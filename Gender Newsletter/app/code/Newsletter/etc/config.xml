@@ -54,6 +54,13 @@
                     </modules>
                 </args>
             </newsletter>
+            <customer>
+                <args>
+                    <modules>
+                        <boolfly_newsletter before="Mage_Customer">Boolfly_Newsletter</boolfly_newsletter>
+                    </modules>
+                </args>
+            </customer>
         </routers>
     </frontend>
 </config>

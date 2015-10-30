@@ -1,0 +1,27 @@
+<?php $currentBrand = $this->getCurrentBrand();
+    if($currentBrand): ?>
+        <div class="brand-name">
+            <img src="<?php echo Mage::getBaseUrl() . 'media/brand/' .$currentBrand->getBrandImage()?>">
+            <span class="h1"><?php echo $currentBrand->getName()?></span>
+        </div>
+        <?php
+            $productsCollection = $this->getProductCollection();
+            if($productsCollection->count()): ?>
+            <ul>
+                <?php foreach($productsCollection as $product):?>
+                    <li>
+                        <div class="product-name">
+                            <a href="<?php echo $this->getUrl('catalog/product/view', array('id' => $product->getId())); ?>">
+                            <?php echo $product->getName()?>
+                            </a>
+                        </div>
+                    </li>
+                <?php endforeach;?>
+            </ul>
+             <?php else:?>
+                <p><?php echo $this->__('There are no matched product.')?></p>
+             <?php endif; ?>
+
+    <?php else: ?>
+        <p><?php echo $this->__('There are no brand.')?></p>
+<?php endif; ?>

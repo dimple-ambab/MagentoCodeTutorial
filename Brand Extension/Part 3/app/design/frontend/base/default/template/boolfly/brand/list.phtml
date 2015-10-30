@@ -1,0 +1,18 @@
+<div class="category-brands">
+<?php
+    $brandsCollection = $this->getBrandsCollection();
+    if($brandsCollection->count() > 0) : ?>
+        <ul class="brands-gird">
+        <?php foreach($brandsCollection as $brand) :?>
+            <li class="item">
+                <a href="<?php echo $this->helper('boolfly_brand/brand')->getBrandUrl($brand)?>">
+                    <img src="<?php echo Mage::getBaseUrl() . 'media/brand/'. $brand->getBrandImage()?>">
+                </a>
+                <div class="brand-name"><span class="h1"><?php echo $brand->getName();?></span></div>
+            </li>
+        <?php endforeach;?>
+        </ul>
+<?php else:?>
+        <p><?php $this->__('There are no brand.')?></p>
+<?php endif;?>
+</div>

@@ -1,0 +1,10 @@
+<?php $brand = $this->getAssociatedBrand();
+if($brand):?>
+    <h3><?php echo $this->__('Brand')?></h3>
+    <p>
+        <a href="<?php echo $this->helper('boolfly_brand/brand')->getBrandUrl($brand); ?>"
+           title="<?php echo $this->escapeHtml($brand->getName()); ?>">
+            <?php echo $brand->getName(); ?>
+        </a>
+    </p>
+<?php endif; ?>

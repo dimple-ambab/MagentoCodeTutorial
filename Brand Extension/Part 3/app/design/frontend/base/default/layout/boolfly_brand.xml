@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout>
+    <boolfly_brand_brand_index>
+        <reference name="content">
+            <block type="boolfly_brand/list" name="brands.list"
+                   template="boolfly/brand/list.phtml"/>
+        </reference>
+    </boolfly_brand_brand_index>
+    <boolfly_brand_brand_view>
+        <reference name="content">
+            <block type="boolfly_brand/view" name="brand.view"
+                   template="boolfly/brand/view.phtml"/>
+        </reference>
+    </boolfly_brand_brand_view>
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="boolfly_brand/catalog_product_link" name="brand.product.view"
+                   template="boolfly/brand/product/link.phtml"/>
+        </reference>
+    </catalog_product_view>
+</layout>

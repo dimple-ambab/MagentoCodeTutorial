@@ -18,6 +18,7 @@ Mage_Adminhtml_Block_Widget_Form
                 'continue' => 0,
             )),
             'method' => 'post',
+            'enctype' => 'multipart/form-data'
         ));
 
         //Define a new fieldset.

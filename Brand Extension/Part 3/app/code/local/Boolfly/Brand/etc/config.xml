@@ -54,13 +54,13 @@
     </frontend>
     <admin>
         <routers>
-            <boolfly_brand_admin>
-                <use>admin</use>
+            <adminhtml>
                 <args>
-                    <module>Boolfly_Brand_Adminhtml</module>
-                    <frontName>boolfly-brand-admin</frontName>
+                    <modules>
+                        <boolfly_brand after="Mage_Adminhtml">Boolfly_Brand_Adminhtml</boolfly_brand>
+                    </modules>
                 </args>
-            </boolfly_brand_admin>
+            </adminhtml>
         </routers>
     </admin>
 </config>

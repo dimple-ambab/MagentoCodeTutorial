@@ -13,7 +13,7 @@ Mage_Adminhtml_Block_Widget_Form
         //A new form to display our brand for editing
         $form = new Varien_Data_Form(array(
             'id' => 'edit_form',
-            'action' => $this->getUrl('boolfly-brand-admin/brand/edit', array(
+            'action' => $this->getUrl('*/*/edit', array(
                 '_current' => true,
                 'continue' => 0,
             )),

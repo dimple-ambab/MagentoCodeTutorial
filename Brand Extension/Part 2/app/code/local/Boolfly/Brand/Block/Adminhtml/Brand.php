@@ -19,7 +19,7 @@ class Boolfly_Brand_Block_Adminhtml_Brand extends Mage_Adminhtml_Block_Widget_Gr
     public function getCreateUrl()
     {
         return $this->getUrl(
-            'boolfly-brand-admin/brand/edit'
+            '*/*/edit'
         );
     }
 }

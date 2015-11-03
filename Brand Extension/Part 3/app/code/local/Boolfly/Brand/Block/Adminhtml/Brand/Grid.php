@@ -20,7 +20,7 @@ class Boolfly_Brand_Block_Adminhtml_Brand_Grid
          * redirected to - in our example, the method edit action of Brand Controller
          * in Brand Module.
          */
-        return $this->getUrl('adminhtml/brand/edit', array(
+        return $this->getUrl('*/*/edit', array(
            'id' => $row->getId()
         ));
     }

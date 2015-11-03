@@ -28,7 +28,7 @@ class Boolfly_Brand_Adminhtml_BrandController extends Mage_Adminhtml_Controller_
             if($brand->getId() < 1)
             {
                 $this->_getSession()->addError($this->__('This brand no longer exist.'));
-                return $this->_redirect('adminhtml/brand/index');
+                return $this->_redirect('*/*/index');
             }
         }
         //Check $_POST data if the form was submitted
@@ -64,7 +64,7 @@ class Boolfly_Brand_Adminhtml_BrandController extends Mage_Adminhtml_Controller_
                     $this->__('The brand has been saved.')
                 );
 
-                return $this->_redirect('adminhtml/brand/edit', array('id' => $brand->getId()));
+                return $this->_redirect('*/*/edit', array('id' => $brand->getId()));
 
             }catch (Exception $e)
             {
@@ -95,7 +95,7 @@ class Boolfly_Brand_Adminhtml_BrandController extends Mage_Adminhtml_Controller_
               $this->__('This brand no longer exists.')
             );
             return $this->_redirect(
-                'adminhtml/brand/index'
+                '*/*/index'
             );
         }
         try {
@@ -106,7 +106,7 @@ class Boolfly_Brand_Adminhtml_BrandController extends Mage_Adminhtml_Controller_
             Mage::logException($e);
             $this->_getSession()->addError($e->getMessage());
         }
-        return $this->_redirect('adminhtml/brand/index');
+        return $this->_redirect('*/*/index');
     }
     /**
      * Without this method the ACL rules rules configured in adminhtml.xml are ignored.

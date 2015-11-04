@@ -6,7 +6,7 @@
         <?php foreach($brandsCollection as $brand) :?>
             <li class="item">
                 <a href="<?php echo $this->helper('boolfly_brand/brand')->getBrandUrl($brand)?>">
-                    <img src="<?php echo Mage::getBaseUrl() . 'media/brand/'. $brand->getBrandImage()?>">
+                    <img src="<?php echo Mage::getBaseUrl('media') . 'brand/'. $brand->getBrandImage()?>">
                 </a>
                 <div class="brand-name"><span class="h1"><?php echo $brand->getName();?></span></div>
             </li>

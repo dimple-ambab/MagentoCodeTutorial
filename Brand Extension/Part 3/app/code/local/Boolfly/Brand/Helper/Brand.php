@@ -11,7 +11,8 @@ class Boolfly_Brand_Helper_Brand extends Mage_Core_Helper_Abstract
             return '#';
         }
         $brandUrl = $brand->getUrlKey();
-        $url = $this->_getUrl('brand/brand/view/' . $brandUrl);
+        $url = $this->_getUrl('brand/brand/view' . $brandUrl, array(
+            'url_key' => $brand->getUrlKey()));
         return $url;
     }
 

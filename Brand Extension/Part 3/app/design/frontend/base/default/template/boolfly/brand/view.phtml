@@ -1,7 +1,7 @@
 <?php $currentBrand = $this->getCurrentBrand();
     if($currentBrand): ?>
         <div class="brand-name">
-            <img src="<?php echo Mage::getBaseUrl() . 'media/brand/' .$currentBrand->getBrandImage()?>">
+            <img src="<?php echo Mage::getBaseUrl('media') . 'brand/' .$currentBrand->getBrandImage()?>">
             <span class="h1"><?php echo $currentBrand->getName()?></span>
         </div>
         <?php

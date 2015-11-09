@@ -1,0 +1,39 @@
+<form id="co-billing_comment-form" action="">
+    <fieldset>
+        <ul class="form-list">
+            <li class="fields">
+                <label for="subj_billing_comment"><?php echo $this->__('Subject') ?></label>
+                <input type="text" name="comment[subj_billing_comment]" title="<?php echo $this->__('Subject') ?>"
+                       id="subj_billing_comment" class="text"/>
+            </li>
+            <li class="fields">
+                <div class="field">
+                    <label for="billing:comment"  >
+                        <?php echo $this->__('Comment ') ?></label>
+                    <div class="input-box">
+                        	<textarea  name="comment[billing_comment]"
+                                       value="<?php echo $this->htmlEscape($this->getQuote()->getBillingComment()) ?>"
+                                       title="<?php echo $this->__('Comment') ?>"
+                                       id="comment:billing_comment"></textarea>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="buttons-set" id="billing_comment-buttons-container">
+            <p class="required"><?php echo $this->__('* Required Fields')?></p>
+            <button type="button" title="<?php echo $this->__('Continue')?>" class="button" onclick="billingComment.save()">
+                <span><span><?php echo $this->__('Continue')?></span></span>
+            </button>
+            <span class="please-wait" id="billing_comment-please-wait" style="display: none">
+                <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif')?>" alt="<?php echo $this->__('Loading next step...') ?>"
+                     title="<?php echo $this->__('Loading next step...') ?>" class="v-middle" /><?php echo $this->__('Loading next step...') ?>
+            </span>
+        </div>
+    </fieldset>
+</form>
+<script type="text/javascript">
+    //<![CDATA[
+    var billingComment = new BillingCommentMethod('co-billing_comment-form','<?php echo $this->getUrl('addStepCheckout/onepage/saveBillingComment') ?>');
+    var billingCommentForm = new VarienForm('co-billing_comment-form');
+    //]]>
+</script>

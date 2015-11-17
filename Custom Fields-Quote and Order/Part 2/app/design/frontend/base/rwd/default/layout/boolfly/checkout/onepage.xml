@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <checkout_onepage_index>
+        <reference name="checkout.onepage">
+            <action method="setTemplate">
+                <template>boolfly/checkout/onepage.phtml</template>
+            </action>
+            <block type="boolfly_checkout/onepage_comment" name="billing_comment" as="billing_comment"
+                   template="boolfly/checkout/onepage/comment.phtml"/>
+        </reference>
+        <reference name="checkout.progress">
+            <action method="setTemplate">
+                <template>boolfly/checkout/onepage/progress.phtml</template>
+            </action>
+            <block type="checkout/onepage_progress" name="comment.progress"
+                   template="boolfly/checkout/onepage/progress/comment.phtml"/>
+        </reference>
+    </checkout_onepage_index>
+    <checkout_onepage_progress>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>boolfly/checkout/onepage/progress.phtml</template>
+            </action>
+        </reference>
+    </checkout_onepage_progress>
+</layout>

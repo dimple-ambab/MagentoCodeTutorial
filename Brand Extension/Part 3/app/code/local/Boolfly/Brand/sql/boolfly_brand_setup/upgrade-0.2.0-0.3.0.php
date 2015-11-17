@@ -1,6 +1,6 @@
 <?php
 $installer = $this;
-/* @var $installer Mage_Catalog_Model_Resource_Eav_Mysql4_Setup */
+/* @var $installer Mage_Eav_Model_Entity_Setup */
 
 $installer->startSetup();
 

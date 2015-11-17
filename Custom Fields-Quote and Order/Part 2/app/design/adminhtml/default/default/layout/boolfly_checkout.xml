@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_sales_order_view>
+        <reference name="order_info">
+            <block type="boolfly_checkout/adminhtml_sales_order_comment" name="billing_comment"
+                   template="boolfly/sales/order/info/billing_comment.phtml"/>
+        </reference>
+    </adminhtml_sales_order_view>
+</layout>

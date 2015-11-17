@@ -1,0 +1,13 @@
+<?php $comment = $this->getBillingComment(); ?>
+<div class="box-left">
+    <div class="entry-edit">
+        <div class="entry-edit-head">
+            <h4 class="icon-head head-payment-method">Billing Comment</h4>
+        </div>
+        <fieldset>
+            <h5><?php echo $comment->getSubjComment();?></h5>
+            <p><?php echo $comment->getComment();?></p>
+        </fieldset>
+    </div>
+</div>
+<div class="clear"></div>
